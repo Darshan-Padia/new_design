@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin fontStyles($sizee){
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $sizee;
+    line-height: 98px;
+    /* identical to box height, or 136% */
+
+    letter-spacing: -0.01em;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #000000;
+}
+
+
+@mixin subtitle_and_caption_styles(){
+    font-family: 'Inter';
+    font-style: normal;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #000000;
+}
+
+h1{
+    @include fontStyles(72px);
+}
+h2{
+    @include fontStyles(48px);
+    line-height: 64px;
+}
+
+h3{
+    @include fontStyles(48px);
+    line-height: 146.5%;
+    letter-spacing: -0.02em;
+    
+}
+
+h4{
+    @include fontStyles(28px);
+
+font-weight: 600;
+line-height: 45px;
+letter-spacing: -0.02em;
+
+}
+
+
+h5{
+    @include fontStyles(24px);
+
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+
+}
+
+h6{
+    @include fontStyles(20px);
+
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+}
+
+
+
+
+.subtitle1_semibold{
+    @include subtitle_and_caption_styles();
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: -0.05em;
+}
+
+.subtitle1_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    /* identical to box height, or 34px */
+    
+    letter-spacing: -0.05em;
+}
+
+.subtitle2_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 172%;
+    /* identical to box height, or 31px */
+
+    letter-spacing: -0.05em;
+}
+
+.subtitle2_regular{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 172%;
+    /* identical to box height, or 31px */
+
+    letter-spacing: -0.05em;
+}
+
+.subtitle3_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 138%;
+}
+
+.subtitle3_regular{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    /* identical to box height, or 22px */
+
+    letter-spacing: -0.05em;
+}
+
+
+.caption1_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 189%;
+    /* identical to box height, or 34px */
+    
+    letter-spacing: -0.05em;
+}
+
+.caption1_regular{
+    @include subtitle_and_caption_styles();
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 189%;
+    /* identical to box height, or 34px */
+    
+    letter-spacing: -0.05em;
+}
+
+.caption2_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.caption2_regular{
+    @include subtitle_and_caption_styles();
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    /* identical to box height, or 29px */
+
+    letter-spacing: -0.05em;
+}
+
+.caption3_medium{
+    @include subtitle_and_caption_styles();
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 172%;
+}
+
+.caption3_regular{
+    @include subtitle_and_caption_styles();
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 172%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: -0.05em;
+}
+
+.label1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.01em;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #000000;
+}
+
+.label2{ 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: -0.01em;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #000000;
+}
+
+.label3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.01em;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #000000;
+}
+
+.capitalised{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+
+    text-align: center;
+    font-variant: all-small-caps;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #000000;
+}

@@ -1,0 +1,3628 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500 &family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<script>
+    function myFunction() {
+        // var x = document.getElementById("mylinks");
+        // if (x.style.display === "block") {
+        //     x.style.display = "none";
+        // } else {
+        //     x.style.display = "block";
+        // }    
+        var nav_img = document.getElementById("ham_img");
+        
+
+        var x = document.getElementById("nav_ham");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+
+            // x.style.transition = "all 2s"
+            nav_img.src = './images/hamburger.svg'
+            nav_img.style.transition = 'all .3s';
+
+        } else {
+            nav_img.src = './images/cross.png'
+            nav_img.style.height = '36px'
+            nav_img.style.width = '36px'
+            nav_img.style.transition = 'all 1s';
+
+            x.style.display = "block";
+        }
+    }
+    
+
+
+   
+
+</script>
+
+<style>
+    /*  */
+
+    /* Style the navigation menu */
+    .topnav {
+
+        /* transition: all 0.8s; */
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+   
+
+    /* Style the hamburger menu */
+    .icon_ {
+        /* background: black; */
+        /* display: block; */
+        /* position: absolute; */
+        right: 0;
+        top: 0;
+    }
+ .icon_{
+        display: none;
+    }
+    /* Add a grey background color on mouse-over */
+    .icon_:hover {
+        /* background-color: #ddd; */
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    
+
+    /*  */
+    .main_div {
+        display: flex;
+        justify-content: center;
+    }
+   
+ 
+
+    .container_div {
+        /* width: 1244px; */
+        max-width: 1244px;
+        /* height: 100px; */
+        /* border: 1px solid; */
+    }
+
+    .header {
+        /* width: 1244px; */
+        height: 650px;
+
+        background-image: url(./images/bg_img.png);
+        /* padding: 100%; */
+
+   }
+
+    .frame_58 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 100px 60px;
+        gap: 35px;
+        width: fit-content;
+        /* margin: ; */
+        /* width: 1244px; */
+        height: 237px;
+
+        background: #FAFAFA;
+    }
+
+    .frame_74 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 100px 60px;
+        gap: 14px;
+
+        /* width: 1244px; */
+        height: 717px;
+
+    }
+
+    .frame_70 {
+        /* Auto layout */
+
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 101px;
+        gap: 23px;
+
+        /* width: 1244px; */
+        height: 482px;
+
+    }
+
+    .frame_67 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 100px 100px;
+        gap: 105px;
+
+        /* width: 1244px; */
+        height: 532px;
+
+    }
+
+    .pricing {
+        background-color: #0432DF;
+        ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 1244px; */
+        height: 696px;
+    }
+
+    .frame_62 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 134px 140px 135px;
+        gap: 50px;
+
+        /* width: 1244px; */
+        height: 692px;
+
+
+    }
+
+    .footer {
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 100px;
+        gap: 131px;
+        background: #020D37;
+        /* position: absolute; */
+        /* width: 1244px; */
+        height: 295px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .frame_80 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 95px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .frame_5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+        gap: 10px;
+
+    }
+
+    .frame_4 {
+        width: 100%;
+        /* border: 2px solid wheat; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 320px;
+    }
+
+    .logo_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 10px 0px;
+        gap: 10px;
+    }
+
+    .frame_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 43px;
+
+        /* width: 596px; */
+        height: 44px;
+    }
+
+    .frame_1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 36px;
+    }
+
+    .nav_text_home {
+        margin: 0;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'salt'on, 'liga'off;
+
+        /* Base color/Pure White */
+
+        color: #FFFFFF;
+
+    }
+
+    .nav_texts {
+        margin: 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        text-align: center;
+        letter-spacing: -0.01em;
+        font-feature-settings: 'salt'on, 'liga'off;
+
+        /* Base color/Pure White */
+
+        color: #FFFFFF;
+
+        opacity: 0.6;
+    }
+
+    .navbar .rectangle {
+        /* width: 1244px; */
+        height: 0.5px;
+
+        /* Base color/Pure White */
+
+        background: #FFFFFF;
+        opacity: 0.1;
+
+    }
+
+    .frame_77 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 51px;
+
+    }
+
+    .frame_76 {
+        /* width: 838px;
+        height: 103px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .frame_75 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+
+    }
+
+    .frame_8 {
+        /* width: 600px;
+        height: 60px; */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .frame_7 {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 260px 15px 20px;
+        gap: 10px;
+        width: 600px;
+        height: 60px;
+
+        /* Font color/Title Light */
+
+        background: #EEEEEE;
+        border-radius: 8px;
+    }
+
+    .search_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .join_premium {
+        margin: 0;
+        margin-top: 39px
+    }
+
+    .union {
+        position: absolute;
+        width: 14px;
+        height: 20px;
+        left: 1px;
+        top: 10.88px;
+
+        background: #4F5261;
+        transform: rotate(-45deg);
+    }
+
+    .search_rectangle {
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        left: 13.73px;
+        top: 15.12px;
+
+        background: #FFFFFF;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .search_ellipse {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 1px;
+        top: 10.88px;
+
+        border: 2px solid #FFFFFF;
+        transform: rotate(-45deg);
+    }
+
+    .frame_74_parent {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .frame_8_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 172%;
+        /* identical to box height, or 24px */
+
+        letter-spacing: -0.05em;
+        font-feature-settings: 'salt'on, 'liga'off;
+        margin: 0;
+        /* Font color/Title Light */
+
+        color: #EEEEEE;
+    }
+
+    .frame_75_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        line-height: 172%;
+        /* identical to box height, or 24px */
+
+        text-align: center;
+        font-feature-settings: 'salt'on, 'liga'off;
+
+        /* Font color/Title Light */
+
+        color: #EEEEEE;
+
+    }
+
+    .frame_57 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 89px;
+
+    }
+
+    .dude_perfect {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/dudeperfect\ 1.png);
+    }
+
+    .pewdiepie {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/Pewdiepie-logo\ 1.png);
+
+    }
+
+    .mrbeast {
+        width: 77px;
+        height: 54px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/MrBeast\ 1.png);
+    }
+
+    .group2 {
+        width: 50px;
+        height: 62px;
+
+    }
+
+    .warner_bros {
+        /* position: absolute; */
+        width: 50px;
+        height: 62px;
+        left: 444px;
+        top: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/wb-removebg-preview\ 1.png);
+    }
+
+    .rectangle_31 {
+        position: absolute;
+        width: 42.46px;
+        height: 57.34px;
+        left: 447.77px;
+        top: 0.76px;
+    }
+
+    .netflix {
+
+        width: 94px;
+        height: 25px;
+
+        background-image: url(./images/netflix\ 1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .pixar {
+        width: 130px;
+        height: 24.92px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/pixar-removebg-preview\ 1.png);
+    }
+
+    .picky_picks {
+        /* position: absolute; */
+        width: 52.06px;
+        height: 52.06px;
+        left: 984.07px;
+        top: 4.97px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./images/channels4_profile\ 1.png);
+    }
+
+    .frame_73 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        /* border-bottom: 1px solid; */
+        gap: 20px;
+    }
+
+    .frame_72 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 423px;
+
+    }
+
+    .frame_25 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 28px;
+
+    }
+
+    .frame_26 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 2px;
+    }
+
+    .frame_28 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 14px 2px 20px;
+        gap: 20px;
+
+        /* width: 126px; */
+        height: 40px;
+
+        background: #F1F1F1;
+        border-radius: 4px;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .frame_27 {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+    }
+
+    .union_ {
+        width: 24px;
+        height: 6px;
+
+        /* Font color/Description Dark */
+
+        background: #4C526A;
+
+    }
+
+    .frame_71 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .product_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0px 0px;
+        gap: 10px;
+        /* 
+        width: 1044px;
+        height: 68px; */
+        /* border-bottom: 0.4px solid #EEEEEE; */
+        background: #FFFFFF;
+
+    }
+
+    .frame_19 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 20px;
+        gap: 47px;
+        /* width: 1042px; */
+        height: 45px;
+
+
+    }
+
+    .play {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vector_p {
+
+        /* background: url(./images/Vector\ 1.svg); */
+        /* background-repeat: no-repeat; */
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 1;
+        width: 14px;
+        height: 20px;
+
+
+    }
+
+    .ellipse_play {
+
+        position: relative;
+        width: 34px;
+        height: 34px;
+        /* left: 20px;
+        top: 5.5px; */
+
+        /* Brand color/Deep Blue Saturation */
+
+        background: #CDD6F9;
+        border-radius: 100%;
+    }
+
+    .frame_15 {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 2px;
+        width: 189px;
+        height: 45px;
+
+
+    }
+
+    .frame_16 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 251px;
+        height: 44px;
+    }
+
+    .frame_17 {
+        width: 212px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+
+    .frame_18 {
+        width: 148px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .icon_f18 {
+        width: 36px;
+        height: 36px;
+    }
+
+    .group_f18 {
+        /* position: absolute; */
+        left: 83.33%;
+        right: -50%;
+        top: 19.44%;
+        bottom: 19.44%;
+    }
+
+    .heart,
+    .download,
+    .three_dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rectangle_7 {
+        /* width: auto;  */
+        width: 100%;
+        height: 1px;
+
+        background: #EEEEEE;
+    }
+
+    .frame_69 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        /* width: 1042px; */
+        height: 294px;
+    }
+
+    .frame_68 {
+        /* width: 1042px; */
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .frame_29 {
+        height: fit-content;
+        width: fit-content;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+
+    }
+
+    .frame_30 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+
+    }
+
+    .img_bg_sound_category {
+        position: absolute;
+    }
+
+    .writing_sound_category {
+        position: relative;
+        z-index: 1;
+    }
+
+    .sound_category_item1 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/musical.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item2 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/industrial.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item3 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/movie_sounds.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item4 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/animal.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item5 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/people.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item6 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/vehicles.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item7 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/sound_designs.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item8 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/emergency.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item9 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/bell.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item10 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/nature.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item11 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/cartoon.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sound_category_item12 {
+        transition: all .5s;
+
+        /* background: url(./images/musical.png); */
+        background-image: url(./images/horror.png);
+        height: 117px;
+        width: 157px;
+        max-height: 117px;
+        max-width: 157px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .frame_66 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 17px;
+
+    }
+
+    .frame_65 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 110px;
+
+
+    }
+
+    /* .frame_67_child_to_center{
+
+        display: flex;
+        justify-self: center;
+    } */
+    .frame_58_parent {
+        background: #FAFAFA;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .frame_64 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 53px;
+
+    }
+
+    .pricing_download_sound_effects {
+        margin: 0;
+        margin-top: 65px;
+    }
+
+    .find_the_right {
+        margin: 0;
+        margin-bottom: 43px;
+        margin-top: 14px;
+        color: white;
+    }
+
+    .frame_63 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 53px;
+
+    }
+
+
+
+    .frame_35,
+    .frame_36,
+    .frame_37,
+    .frame_38 {
+        width: 246px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 21px;
+
+    }
+
+    .frame_31 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+    }
+
+    .frame_36 {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+
+    }
+
+    .frame_32 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+    }
+
+    .frame_34 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+    }
+
+    .inside_pricing {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .basic {
+        width: 334px;
+        height: 345px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #CDD6F9;
+
+        border-radius: 12px;
+    }
+
+    .premium {
+        width: 334px;
+        height: 345px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid #CDD6F9; */
+
+        border-radius: 12px;
+        background: #1B4BFF;
+    }
+
+    .frame_60 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 20px; */
+    }
+
+    .frame_61 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 29px;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+    }
+
+    .divider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .testimonial_item {
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 30px;
+        gap: 10px;
+
+
+        /* Base color/Pure White */
+
+        background: #FFFFFF;
+        /* Font color/Title Light */
+
+        border: 1px solid #EEEEEE;
+        border-radius: 8px;
+
+
+    }
+
+    .in_basic {
+        width: 256px;
+        height: auto;
+        margin-left: 34px;
+    }
+
+    .btnw {
+        width: fit-content;
+    }
+
+    .in_basic1 {
+        margin-bottom: 56px;
+    }
+
+    .in_basic2 {
+        margin-bottom: 25px;
+    }
+
+    .frame_44 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 5px;
+        gap: 10px;
+    }
+
+    .frame_45 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px 10px 0px;
+        gap: 10px;
+
+        width: 90px;
+        height: 80px;
+    }
+
+    .frame_70_parent {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        height: fit-content;
+        /* margin: auto; */
+    }
+
+    .frame_43 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 1px;
+
+    }
+
+    .ellipse_divider {
+        /* margin-top: 30px; */
+        width: 8px;
+        height: 8px;
+
+        /* Font color/Description Light */
+
+        background: #ACAFB8;
+        opacity: 0.6;
+        border-radius: 100%;
+    }
+
+    .frame_55 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+
+    }
+
+    .footer_child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 50px 100px; */
+        gap: 131px;
+        background: #020D37;
+        /* position: absolute; */
+        /* width: 1244px; */
+        height: 295px;
+
+    }
+
+    .frame_53,
+    .frame_52,
+    .frame_51 {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+    }
+
+    .frame_54 {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 25px;
+    }
+
+    .frame_48,
+    .frame_49,
+    .frame_50 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+    }
+
+
+    /* hamburger */
+    /* CSS for the hamburger menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+    /*  */
+    .navbar_mobile {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        background-color: #5c5a5a;
+        opacity: 1;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        animation: slideDown 0.5s ease;
+
+
+    } .navbar_mobile.hidden {
+        display: none;
+        animation: slideUp 0.3s ease;
+
+    }
+
+    .navbar_mobile.visible {
+        display: block;
+    }
+    @keyframes slideUp {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    }   
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+
+    .navbar_mobile nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar_mobile nav ul li {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .navbar_mobile nav ul li:hover {
+        background-color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+        overflow: visible !important;
+        transform: scale(1.2) !important;
+        transition: all .2s;
+        /* z-index: 9; */
+
+    }
+    .navbar_mobile nav ul li:hover a 
+    {
+        transition: all .2s;
+        color : black;
+    }
+
+    .navbar_mobile nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar_mobile nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+        z-index: 5;
+    }
+
+    .navbar_mobile nav ul li a:hover {
+        color: black;
+
+        
+        /* transform: scale(1.2) !important;
+        transition: all .2s; */
+    }
+    /*  */
+    li{
+        /* width: fit-content; */
+    }
+
+    /* CSS for the navigation items (hidden by default) */
+    .nav_items {
+        display: none;
+    }
+
+
+    /* CSS for media query when the screen width is less than 768 pixels */
+    @media (max-width: 1224px) {
+        .frame_1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .frame_1 {
+            display: none;
+        }
+
+        .nav_items {
+            display: block;
+        }
+        #login_btn{
+            display: none;
+        }
+        /* .frame_2{
+            display: none;
+        } */
+        .icon_{
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width: 1260px) {
+
+        .sound_category_item1,
+        .sound_category_item2,
+        .sound_category_item3,
+        .sound_category_item4,
+        .sound_category_item5,
+        .sound_category_item6,
+        .sound_category_item7,
+        .sound_category_item8,
+        .sound_category_item9,
+        .sound_category_item10,
+        .sound_category_item11,
+        .sound_category_item12 {
+            height: 90px;
+            width: 150px;
+
+            transition: all .5s;
+        }
+    }
+    @media only screen and (max-width: 330px) {
+        .frame_7 .caption2_medium{
+            font-size: 15.5px;
+        }
+    }
+
+    @media only screen and (max-width: 1224px) {
+
+        /* Styles for tablets */
+        /* Place your tablet-specific CSS rules here */
+        .main_div {
+            display: inline;
+            /* flex-wrap: wrap; */
+            /* display: inline-flex; */
+
+        }
+
+        .frame_72 {
+            gap: 94px;
+        }
+
+        .frame_57 {
+            /* background-color: red; */
+            gap: 40px;
+        }
+
+        .tablet_invisible {
+            display: none;
+        }
+
+        .frame_67 {
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+
+        .frame_68 {
+            height: fit-content;
+        }
+
+        .frame_69 {
+            height: fit-content;
+        }
+
+        .frame_70 {
+            height: fit-content;
+        }
+
+        .frame_29 {
+            min-width: 648px;
+            gap: 16px;
+        }
+
+        .sound_category_item1,
+        .sound_category_item2,
+        .sound_category_item3,
+        .sound_category_item4,
+        .sound_category_item5,
+        .sound_category_item6,
+        .sound_category_item7,
+        .sound_category_item8,
+        .sound_category_item9,
+        .sound_category_item10,
+        .sound_category_item11,
+        .sound_category_item12 {
+            height: 90px;
+            width: 150px;
+        }
+
+        .frame_17 {
+            width: auto;
+        }
+
+        .frame_74 {
+            width: fit-content;
+            /* align-items: center; */
+        }
+
+        .pricing .h3 {
+            /* converting to h4 */
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 45px;
+            /* identical to box height, or 161% */
+
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+
+            color: rgb(255, 255, 255);
+
+        }
+
+        .frame_70 {
+
+            margin: 0;
+        }
+
+        .frame_58 {
+            width: fit-content;
+            padding: 40px 60px;
+        }
+
+        .product_item {
+            max-width: 648px;
+        }
+
+        .product_item .subtitle3_medium {
+            font-size: 14px;
+            width: 162px;
+        }
+
+        .frame_67 {
+            align-items: center;
+        }
+
+        .frame_25 .subtitle3_medium {
+            font-size: 14px;
+            /* width: 162px; */
+        }
+
+        .frame_15 {
+            width: auto;
+        }
+
+        .frame_15 .subtitle3_medium {
+            width: 129px
+        }
+
+        .frame_74 .h4 {
+            font-size: 24px;
+        }
+
+        .frame_29 {
+            flex-wrap: wrap;
+        }
+
+        .frame_74 {
+            padding: 50px 60px;
+            height: fit-content;
+
+        }
+
+        .dude_perfect,
+        .pewdiepie {
+            height: 40px;
+            width: 40px;
+        }
+
+        .mrbeast {
+
+            width: 62.74px;
+            height: 44px;
+
+        }
+
+        .warner_bros {
+            width: 40px;
+            height: 49.6px;
+        }
+
+        .netflix {
+
+            width: 80px;
+            height: 21.28px;
+
+        }
+
+        .pixar {
+            width: 90px;
+            height: 17.25px;
+        }
+
+        .picky_picks {
+            width: 41.48px;
+            height: 41.48px;
+
+        }
+
+        .pricing_download_sound_effects {
+            margin-top: 60px;
+        }
+
+        .find_the_right {
+            margin: 0;
+            margin-bottom: 43px;
+            margin-top: 12px;
+            color: white;
+        }
+
+        .frame_58_parent {
+            min-width: 768px;
+            margin: auto;
+        }
+
+        .header,
+        .frame_58,
+        .frame_74_parent,
+        .frame_70,
+        .frame_67,
+        .pricing,
+        .frame_62,
+        .footer {
+            min-width: 768px;
+        }
+
+        .frame_28 {
+            width: 101px;
+        }
+
+        .frame_28 .subtitle3_medium {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .frame_70 {
+            padding: 40px 60px;
+
+        }
+
+        .we_are_provide {
+            max-width: 466px;
+            text-align: center;
+        }
+
+        .frame_66 .h4 {
+            font-size: 24px;
+        }
+
+        .frame_67 {
+            padding-left: 83px;
+            padding-right: 83px;
+            padding-bottom: 60px;
+            gap: 40px
+        }
+
+        .basic {
+            height: auto;
+        }
+
+        .premium {
+            height: auto;
+        }
+
+        .basic,
+        .premium {
+            width: 280px;
+        }
+
+        .basic .h4,
+        .premium .h4 {
+            line-height: 160%;
+            font-size: 24px;
+        }
+
+        .basic .subtitle2_medium,
+        .premium .subtitle2_medium {
+            /* background-color: red; */
+            width: 212px;
+            line-height: 138%;
+
+            font-size: 16px;
+        }
+
+        .in_basic {
+            margin-left: 29px;
+        }
+
+        .in_basic1 {
+            margin-bottom: 45px;
+        }
+
+        .in_basic2 {
+            margin-bottom: 24px;
+        }
+
+        .basic .subtitle1_semibold,
+        .premium .subtitle1_semibold {
+            font-size: 18px;
+        }
+
+        .premium .btn-secondary {
+            width: 119px;
+            height: 44px;
+            margin-bottom: 42px;
+        }
+
+        .premium .label1 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 10px 20px;
+
+        }
+
+        .basic .btn-tertiary {
+            /* background-color: red; */
+            width: 119px;
+            padding: 10px 20px;
+
+            height: 44px;
+            margin-bottom: 42px;
+        }
+
+        .basic .label1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            text-align: center;
+            letter-spacing: -0.01em;
+
+
+        }
+
+        .join_premium {
+            /* background-color: red; */
+            margin: 0;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        .pricing {
+            height: auto;
+        }
+
+        .frame_62 {
+            height: auto;
+        }
+
+        .testimonial_item3 {
+            display: none;
+        }
+
+        .testimonial_item1 {
+            width: 305px;
+        }
+
+        .testimonial_item2 {
+            width: 305px;
+
+        }
+
+        .frame_18 {
+            width: auto;
+        }
+
+        .hear_good {
+            width: 510px;
+        }
+
+        .frame_62 {
+            height: auto;
+            padding: 60px 0px 90px;
+
+        }
+
+        .footer_wavesco {
+            max-width: 259px;
+        }
+
+        .frame_61 {
+            gap: 0px !important;
+        }
+
+        .footer {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .footer_child {
+            align-content: flex-start;
+            height: auto;
+        }
+
+        .capitalised {
+            margin: auto;
+        }
+
+
+
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 790px) {
+        .frame_5 {
+            max-width: 768px;
+            transition: all 0.4s;
+        }
+    }
+    .frame_8_text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 172%;
+        /* or 24px */
+
+        letter-spacing: -0.05em;
+        font-feature-settings: 'salt' on, 'liga' off;
+
+    }
+
+    @media only screen and (max-width: 767px) {
+        .header,
+        .frame_58,
+        .frame_74_parent,
+        .frame_70,
+        .frame_67,
+        .pricing,
+        .frame_62,
+        .footer,
+        .frame_58_parent {
+            min-width: 288px;
+        }
+    }
+
+
+    @media only screen and (max-width: 767px) {
+
+        /* Styles for mobile devices */
+        /* Place your mobile-specific CSS rules here */
+        .main_div {
+            display: inline;
+            /* flex-wrap: wrap; */
+            /* display: inline-flex; */
+
+        }
+
+        .frame_5 {
+            padding: 20px;
+            gap: 5px;
+        }
+
+        .frame_4 {
+            /* flex-direction: column; */
+            gap: 10px;
+            align-items: center;
+        }
+
+        .capitalised {
+            margin: auto;
+        }
+
+        .frame_2 {
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            gap: 10px;
+            height: auto;
+        }
+
+        .frame_1 {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav_texts {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .frame_17 {
+            width: auto;
+        }
+
+        .rectangle {
+            display: none;
+        }
+
+        .header,
+        .frame_58,
+        .frame_74_parent,
+        .frame_70,
+        .frame_67,
+        .pricing,
+        .frame_62,
+        .footer,
+        .frame_58_parent {
+            min-width: 288px;
+        }
+
+        .frame_29 {
+            /* background-color: red; */
+            min-width: 288px;
+            gap: 10px;
+        }
+
+        .frame_57 {
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 29.7px;
+
+        }
+
+        .frame_18 {
+            /* width:fit-content */
+        }
+
+        .footer_child {
+            flex-wrap: wrap;
+        }
+
+        .testimonial_item2 {
+            display: none;
+        }
+
+        .mobile_invisible {
+            display: none;
+        }
+
+        .frame_28 {
+            width: 36px;
+        }
+
+        .frame_74 {
+            padding: 50px 16px;
+            gap: 14px;
+
+
+        }
+
+        .frame_65 {
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .inside_pricing {
+            flex-direction: column;
+        }
+
+        .hear_good {
+            max-width: 261px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px !important;
+            line-height: 30px;
+            /* or 150% */
+
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+        }
+
+        .sound_category_item1,
+        .sound_category_item2,
+        .sound_category_item3,
+        .sound_category_item4,
+        .sound_category_item5,
+        .sound_category_item6,
+        .sound_category_item7,
+        .sound_category_item8,
+        .sound_category_item9,
+        .sound_category_item10,
+        .sound_category_item11,
+        .sound_category_item12 {
+            height: 70px;
+            width: 139px;
+
+            transition: all .5s;
+        }
+
+        .frame_70 {
+
+            padding: 30px 8px 40px;
+            gap: 20px;
+        }
+
+        .frame_19 {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 19px;
+
+        }
+
+        .product_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 0px 0px;
+            gap: 6px;
+        }
+
+        .heart {
+            display: none;
+        }
+
+        .product_item .subtitle3_medium {
+            font-size: 14px;
+            width: 162px;
+        }
+
+        .frame_25 .subtitle3_medium {
+            font-size: 14px;
+            /* width: 162px; */
+        }
+
+        .frame_15 {
+            width: auto;
+        }
+
+        .frame_15 .subtitle3_medium {
+            width: 129px
+        }
+
+        .frame_18 {
+            width: auto;
+        }
+
+        .frame_25 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 12px;
+        }
+
+        .best_sound {
+            width: 286px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px !important;
+            line-height: 30px;
+            /* or 150% */
+
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+
+
+        }
+
+        .frame_76 .h3 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            /* or 150% */
+            /* width: 289px; */
+            width: 90%;
+
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+        }
+
+        .frame_76 .subtitle1_medium {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 138%;
+            /* or 22px */
+            /* width: 284px; */
+            width: 90%;
+
+            text-align: center;
+        }
+
+        .frame_80 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 0px 60px;
+            gap: 56px;
+        }
+        .frame_75 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+            width: 70%;
+
+        }
+
+        .frame_7 {
+            /* margin: auto; */
+            /* width: fit-content; */
+            /* display: none; */
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 260px 11px 14px;
+            padding-top: 10px ;
+            /* padding-right: ; */
+            padding-bottom: 11px ;
+
+            /* padding-left: ; */
+
+            width: 100% ;
+
+            gap: 10px;
+            overflow: hidden;
+            /* margin: auto;     */
+            /* margin-right: 17px;
+            margin-left: 15px; */
+            padding-right: 17px;
+            padding-left: 15px;
+            /* min-width: 287px; */
+        }
+        .frame_8{
+            width: 100%;
+        }
+
+        .frame_72 {
+            gap: 76px;
+        }
+
+        .frame_18 {
+            /* width: 148px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+        }
+
+        .frame_58 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px 40px;
+            gap: 30px;
+            height: auto;
+        }
+
+        .frame_58 .h6 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 172%;
+            /* or 31px */
+
+            text-align: center;
+            letter-spacing: -0.05em;
+            font-feature-settings: 'salt'on, 'liga'off;
+        }
+
+        .frame_70 .h4 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height, or 150% */
+
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+
+        }
+
+        .we_are_provide {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px !important;
+            line-height: 30px;
+            /* or 150% */
+
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+            width: 265px;
+
+        }
+
+        .pricing_download_sound_effects {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px !important;
+            line-height: 160%;
+            /* or 38px */
+
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'salt'on, 'liga'off;
+        }
+
+        .find_the_right {
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 180%;
+        }
+
+        .inside_pricing {
+            gap: 20px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 50px 16px;
+            gap: 34px;
+
+        }
+
+        .footer_wavesco {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 172%;
+            /* or 24px */
+
+            letter-spacing: -0.05em;
+            font-feature-settings: 'salt'on, 'liga'off;
+        }
+
+        .footer_child {
+            justify-content: flex-start;
+            gap: 34px;
+        }
+
+        .frame_53 {
+            width: auto;
+            margin: 0;
+            margin-right: 20px;
+        }
+
+        .frame_53 .caption2_regular,
+        .frame_52 .caption2_regular,
+        .frame_51 .caption2_regular {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 172%;
+            /* identical to box height, or 24px */
+
+            letter-spacing: -0.05em;
+            font-feature-settings: 'salt'on, 'liga'off;
+
+        }
+
+        .frame_53 .subtitle2_medium,
+        .frame_52 .subtitle2_medium,
+        .frame_51 .subtitle2_medium {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 138%;
+            /* identical to box height, or 22px */
+
+            font-feature-settings: 'salt'on, 'liga'off;
+
+        }
+
+        .frame_8_text {
+            width: 80%;
+            
+        }
+    }
+</style>
+
+
+
+<body style="padding: 0%; margin: 0%;">
+   
+    <div class="main_div">
+    
+            <div class="container_div">
+
+            
+                <!-- <div class="header_parent" >
+                    <img style="position: absolute; opacity: 0.7;" src="./images/bg_img.png" alt="">
+                </div> -->
+                <div class="header" id="header_height">
+                    <div class="frame_80">
+                        <div class="navbar">
+                            <div class="frame_5">
+                                <div class="frame_4">
+                                    <div class="logo_nav">
+                                        <img src="./images/WavesCo.png" alt="logo">
+                                    </div>
+                                    <div class="frame_2">
+                                        <div class="frame_1" id="mylinks">
+                                            <div>
+                                                <a class="nav_text_home">
+                                                    Home
+                                                </a>
+                                            </div>
+    
+    
+                                            <div>
+                                                <a class="nav_texts">
+                                                    Best For Youtube
+                                                </a>
+                                            </div>
+    
+                                            <div>
+                                                <a class="nav_texts">
+                                                    Category
+                                                </a>
+                                            </div>
+    
+                                            <div>
+                                                <a class="nav_texts">
+                                                    Upgrade
+                                                </a>
+                                            </div>
+    
+                                            <div>
+                                                <a class="nav_texts">
+                                                    FAQ
+                                                </a>
+                                            </div>
+    
+                                        </div>
+                                        <button class="btn-primary small label2" id="login_btn">
+                                            Login
+                                        </button>
+    
+                                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                                        <a href="javascript:void(0);" class="icon_" onclick="myFunction()">
+                                            <!-- <i class="fa fa-bars" style="font-size:36px"></i> -->
+                                            <img id="ham_img" src="./images/hamburger.svg" alt="menu">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+    
+    
+    
+                        <div class="frame_77">
+                            <div class="frame_76">
+                                <div class="h3" style="text-align: center;">
+                                    Free download sound effects without copyright
+                                </div>
+                                <div class="subtitle1_medium" style="color: #ACAFB8;  margin:0;">
+                                    Download free copyright sound effect for your YouTube video and any use.
+                                </div>
+                            </div>
+    
+                            <div class="frame_75">
+                                <div class="frame_8">
+                                    <div class="frame_7">
+                                        <div class="search_icon">
+                                            <!-- <div class="union">
+                                                <div class="search_rectangle">
+    
+                                                </div>
+                                                <div class="search_ellipse">
+    
+                                                </div>
+                                            </div> -->
+                                            <img style="color: #4C526A;" src="./images/search-icon.svg" alt="">
+                                        </div>
+                                        <p class="caption2_medium" style="color: #4C526A; margin: 0;">
+                                            Search sound effects
+                                        </p>
+                                    </div>
+                                    <!-- <div> -->
+                                    <!-- <button>
+                                            any
+                                        </button> -->
+                                    <!-- </div> -->
+    
+    
+                                </div>
+                                <p class="frame_8_text">
+                                    Try keyword: happy, funny, natural, horror, jumpscare and more
+                                </p>
+    
+                            </div>
+                            <p class="frame_75_text">
+                                650.654 Available Sounds. Library Updated Weekly. See popular sounds
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="navbar_mobile" id="nav_ham">
+                    <nav>
+                        <ul style="list-style: none;line-height: 25px">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Best for Youtube</a></li>
+    
+                            <li><a href="">Category</a></li>
+    
+                            <li><a href="">Upgrade</a></li>
+    
+                            <li><a href="">FAQ</a></li>
+    
+                            <li><a href="">Login</a></li>
+    
+                            <!-- <li>Home</li>
+                            <li>Best for Youtube</li>
+                            <li>Category</li>
+                            <li>Upgrade</li>
+                            <li>FAQ</li>
+                            <li>Login</li> -->
+    
+    
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="frame_58_parent" id="youtube_height">
+    
+                    <div class="frame_58">
+                        <p class="h6" style="color: #020D37; margin: auto;">
+                            Trusted by top Youtuber and Production House
+                        </p>
+    
+                        <div class="frame_57">
+                            <div class="dude_perfect"></div>
+                            <div class="pewdiepie"></div>
+                            <div class="mrbeast"></div>
+    
+    
+                            <!-- <div  class="group2"> -->
+                            <div class="warner_bros"></div>
+                            <!-- <div class="rectangle_31"></div> -->
+    
+    
+                            <!-- </div> -->
+    
+                            <div class="netflix"></div>
+                            <div class="pixar"></div>
+                            <div class="picky_picks"></div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="frame_74_parent">
+                    <div class="frame_74">
+                        <p class="h4 best_sound" style="color: #020D37; margin: 0;">
+                            Best sound effects for youtube videos
+                        </p>
+    
+                        <div class="frame_73">
+                            <div class="frame_72">
+                                <div class="frame_25">
+                                    <div class="frame_26">
+                                        <p class="subtitle3_medium" style="text-decoration: underline; margin: 0;">
+                                            All
+                                        </p>
+                                    </div>
+    
+                                    <p class="subtitle3_medium" style="color: #4C526A; margin: 0;">
+                                        Jumpscare
+                                    </p>
+                                    <p class="subtitle3_medium" style="color: #4C526A; margin: 0;">
+                                        Mellow
+                                    </p>
+                                    <p class="subtitle3_medium mobile_invisible" style="color: #4C526A; margin: 0;">
+                                        Happiness
+                                    </p>
+                                    <p class="subtitle3_medium mobile_invisible" style="color: #4C526A; margin: 0;">
+                                        Ambience
+                                    </p>
+                                    <p class="subtitle3_medium mobile_invisible"
+                                        style="color: #4C526A;  margin: 0;margin-right: 10px; ">
+                                        Zonk
+                                    </p>
+                                </div>
+    
+                                <div class="frame_28">
+                                    <p class="subtitle3_medium mobile_invisible" style="color: #4C526A;">
+                                        Filter
+                                    </p>
+                                    <div class="icon">
+                                        <img src="./images/filter_icon.svg" alt="">
+                                        <!-- <div class="frame_27"> -->
+    
+                                        <!-- <div class="union_"> -->
+                                        <!--  -->
+                                        <!--  -->
+                                        <!--  -->
+                                        <!-- </div> -->
+    
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+    
+                            <div class="frame_71">
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0; ">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+    
+                                </div>
+    
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="product_item">
+                                    <div class="frame_19">
+                                        <div class="play">
+                                            <div class="ellipse_play">
+                                            </div>
+                                            <div class="vector_p">
+                                                <img src="./images/Vector 1.svg" alt="play_icon">
+                                            </div>
+                                        </div>
+    
+                                        <div class="frame_15">
+                                            <p class="subtitle3_medium" style="color: #020D37; margin: 0;">
+                                                Sound name
+                                            </p>
+    
+                                            <p style="
+                        
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 172%;
+                                        margin: 0;
+                                        /* identical to box height, or 21px */
+                                        
+                                        letter-spacing: -0.05em;
+                                        font-feature-settings: 'salt' on, 'liga' off;
+                                        
+                                        /* Font color/Description Dark */
+                                        
+                                        color: #4C526A;">
+                                                0:12
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_16 tablet_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; margin: 0;">
+                                                Confussed excited crowd slight panic and distress
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_17 mobile_invisible">
+                                            <p class="subtitle3_medium " style="color: #4C526A; 
+                                            height: 22px;">
+                                                Shocking, jumpscare
+                                            </p>
+                                        </div>
+    
+                                        <div class="frame_18">
+                                            <!-- <div class="icon_f18"> -->
+                                            <!-- <div class="group_f18"> -->
+                                            <div class="heart">
+                                                <img src="./images/heart.png" alt="love">
+                                            </div>
+                                            <div class="download">
+                                                <img src="./images/download.png" alt="download">
+                                            </div>
+    
+                                            <div class="three_dots">
+                                                <img src="./images/three_dots.png" alt="menu">
+                                            </div>
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="rectangle_7">
+    
+                                    </div>
+    
+                                </div>
+    
+                                <p style="
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 24px;
+                                /* identical to box height, or 171% */
+                                
+                                display: flex;
+                                align-items: center;
+                                letter-spacing: -0.01em;
+                                text-decoration-line: underline;
+                                font-feature-settings: 'salt' on, 'liga' off;
+                                
+                                /* Brand color/Deep Blue */
+                                
+                                color: #0432DF;
+                                ">
+                                    See all sound effects
+                                </p>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="frame_70_parent">
+                    <div class="frame_70">
+                        <p class="h4" style="color: #020D37; margin: 0;">
+                            Browse by Category
+                        </p>
+    
+                        <div class="frame_69">
+                            <div class="frame_68">
+                                <div class="frame_29">
+                                    <div class="sound_category_item1">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Musical
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item2">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Industrial
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item3">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Movie Sounds
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item4">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Animal
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item5">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            People
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item6">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Vehicles
+                                        </p>
+                                    </div>
+    
+    
+    
+                                    <!-- </div> -->
+    
+    
+    
+                                    <!-- <div class="frame_30"> -->
+                                    <div class="sound_category_item7">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Sound Designs
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item8">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Emergency
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item9">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Bell
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item10">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Nature
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item11">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Cartoon
+                                        </p>
+                                    </div>
+    
+    
+                                    <div class="sound_category_item12">
+                                        <p class="subtitle2_semibold writing_sound_category" style="color: white;">
+                                            Horror
+                                        </p>
+                                    </div>
+    
+    
+    
+                                </div>
+    
+                                <!-- <div class="frame_30">
+        
+                                </div> -->
+    
+                            </div>
+    
+                            <p style="
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 24px;
+                            /* identical to box height, or 171% */
+        
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: -0.01em;
+                            text-decoration-line: underline;
+                            font-feature-settings: 'salt' on, 'liga' off;
+                            margin: 0;
+                            /* Brand color/Deep Blue */
+        
+                            color: #0432DF;
+                            ">
+                                See all category
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="frame_67">
+                    <!-- <div class="frame_67_child_to_center"> -->
+                    <div class="frame_66">
+                        <p class="capitalised" style="font-size: 18px; color: #F59E00; ">
+                            WHY US?
+                        </p>
+                        <p class="h4 we_are_provide" style="color: #020D37; margin: 0; ">
+                            We are provide the best quality sound effects without copyright.
+                        </p>
+                    </div>
+    
+                    <div class="frame_65">
+                        <div class="frame_63">
+                            <div class="frame_35">
+                                <img src="./images/icon-primary.png" alt="man_with_5_stars">
+    
+                                <div class="frame_31">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin: 0;">
+                                        1.203.322 Customer satisfied
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color: #4C526A; margin: 0; ">
+                                        We've helped more than 1 million customers find best sound effects
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="frame_36">
+                                <img src="./images/free_icon.png" alt="man_with_5_stars">
+    
+                                <div class="frame_33">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin: 0;">
+                                        Royalty-free
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color: #4C526A; margin: 0;">
+                                        Just download and use the sound for your videos without royalty
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+    
+                        <div class="frame_64">
+                            <div class="frame_37">
+                                <img src="./images/icon-primary_2.png" alt="man_with_5_stars">
+    
+                                <div class="frame_32">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin: 0;">
+                                        650.654 Sounds
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color: #4C526A; margin: 0;">
+                                        More than 600 thousand high quality to download. Still counting
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="frame_38">
+                                <img src="./images/crown.png" alt="man_with_5_stars">
+    
+                                <div class="frame_34">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin: 0;">
+                                        Provide proper sounds
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color: #4C526A; margin: 0;">
+                                        We just provide sounds with the best quality for customers
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <!-- </div> -->
+    
+                </div>
+    
+    
+                <div class="pricing" id="pricing_height">
+                    <p class="h3 pricing_download_sound_effects">
+                        Download sound effects for your project
+                    </p>
+                    <p class="caption1_medium find_the_right">
+                        Find the right plan for you
+                    </p>
+    
+                    <div class="inside_pricing">
+                        <div class="basic">
+                            <p class="h4 in_basic"
+                                style="margin-top: 26px;  margin-bottom: 0; color: white; width: fit-content; height: fit-content; ">
+                                Basic
+                            </p>
+                            <p class="subtitle2_medium in_basic in_basic1" style="margin-top: 13px; margin-left: 34px;
+                            ;  color: white;">
+                                Download any royalty-free sound effects
+                            </p>
+                            <p class="subtitle1_semibold in_basic"
+                                style="  margin-top: 0; margin-bottom: 17px;  color: white; width: fit-content;">
+                                Free
+                            </p>
+                            <button class="btn-tertiary label1 in_basic btnw" style="border: 2px solid #FFFFFF ;color: white;
+                            border-radius: 8px; ">
+                                Get started
+                            </button>
+                        </div>
+    
+                        <div class="premium">
+                            <p class="h4 in_basic"
+                                style="margin-top: 26px; margin-bottom: 0; color: white; width: fit-content; height: fit-content; ">
+                                Premium
+                            </p>
+                            <p class="subtitle2_medium in_basic in_basic2" style="margin-top: 13px; 
+                           ;  color: white;">
+                                Download premium sound effects and use them for any business purpose </p>
+                            <p class="subtitle1_semibold in_basic"
+                                style=" margin-top: 0; margin-bottom: 17px;  color: white; width: fit-content;">
+                                Start from $12/month
+                            </p>
+                            <button class="btn-secondary label1 in_basic btnw" style=" border: none; background-color: #fff;color: #0432DF;
+                            border-radius: 8px;">
+                                Get started
+                            </button>
+                        </div>
+                    </div>
+                    <p class="caption1_medium join_premium" style=" color: white;">
+                        Join premium with 434,849 creators.
+                    </p>
+                </div>
+    
+                <div class="frame_62">
+                    <div class="frame_60">
+                        <div>
+    
+                        </div>
+                        <p class="capitalised" style="color: #F59E00;margin: 0px; width: auto; padding-bottom: 20px; ">
+                            TESTIMONIALS
+                        </p>
+                        <P class="h5 hear_good" style="color: #020D37; text-align: center; margin: 0;">
+                            Hear good experiences from our customers
+                        </P>
+                    </div>
+    
+                    <div class="frame_61">
+                        <div class="testimonials">
+    
+                            <div class="testimonial_item testimonial_item1">
+                                <img src="./images/ri_double-quotes-r.png" alt="quotes">
+                                <div class="frame_44">
+                                    <p class="caption3_medium" style="color: #4C526A; margin:0; text-align: center;"> The
+                                        sounds from WavesCo is great and it really helps our team to save time and
+                                        production costs. </p>
+                                </div>
+    
+                                <div class="frame_45">
+                                    <img src="./images/testi_img1.png" alt="testi_img_1">
+                                </div>
+    
+                                <div class="frame_43">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin:0; text-align: center;">
+                                        Anne Joyce
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color:#ACAFB8; margin:0; text-align: center;">
+                                        Video editor at Dude Perfect
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="testimonial_item testimonial_item2">
+                                <img src="./images/ri_double-quotes-r.png" alt="quotes">
+                                <div class="frame_44">
+                                    <p class="caption3_medium" style="color: #4C526A; margin:0; text-align: center;">
+                                        WavesCo was a great choice for our team for film production, the quality is
+                                        amazingly great. </p>
+                                </div>
+    
+                                <div class="frame_45">
+                                    <img src="./images/testi_img2.png" alt="testi_img_1">
+                                </div>
+    
+                                <div class="frame_43">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin:0; text-align: center;">
+                                        Edward Sann
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color:#ACAFB8; margin:0; text-align: center;">
+                                        Head of Video editor at Netflix
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="testimonial_item testimonial_item3">
+                                <img src="./images/ri_double-quotes-r.png" alt="quotes">
+                                <div class="frame_44">
+                                    <p class="caption3_medium" style="color: #4C526A; margin:0; text-align: center;">
+                                        Perfect way to get best quality sound effects for youtube videos. Thanks to WavesCo
+                                        team. </p>
+                                </div>
+    
+                                <div class="frame_45">
+                                    <img src="./images/testi_img3.png" alt="testi_img_1">
+                                </div>
+    
+                                <div class="frame_43">
+                                    <p class="subtitle2_semibold" style="color: #020D37; margin:0; text-align: center;">
+                                        Ronn D
+                                    </p>
+    
+                                    <p class="caption3_medium" style="color:#ACAFB8; margin:0; text-align: center;">
+                                        Video editor at PewDiePie
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="divider">
+                            <div class="ellipse_divider">
+    
+                            </div>
+                            <div class="ellipse_divider">
+    
+                            </div>
+                            <div class="ellipse_divider">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer" id="footer_height">
+                    <div class="frame_55">
+                        <div class="frame_54">
+                            <img style="width: 170px;
+                            height: 25.5px;" src="./images/WavesCo.png" alt="WavesCo logo">
+    
+                            <p class="caption2_regular footer_wavesco" style="color: #ACAFB8; margin: 0;">
+                                WavesCo is a platform for providing premium sound effects for Youtube videos, movies and
+                                many more.
+                            </p>
+                        </div>
+    
+                        <p class="caption3_medium" style="color: #ACAFB8; margin: 0;">
+                            WavesCo ©2021, All rights reserved
+                        </p>
+                    </div>
+    
+                    <div class="footer_child">
+                        <div class="frame_53">
+                            <p class="subtitle2_semibold" style="color: #EEEEEE; margin:0;">
+                                Product
+                            </p>
+    
+                            <div class="frame_48">
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;width: 106px;">
+                                    Browse sounds
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Pricing
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    FAQ
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Affiliate
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="frame_52">
+                            <p class="subtitle2_medium" style="color: #EEEEEE; margin:0;">
+                                Company
+                            </p>
+                            <div class="frame_49">
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Blog
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    About us
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Help
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Carrier
+                                </p>
+                            </div>
+                        </div>
+                        <div class="frame_51">
+                            <p class="subtitle2_medium" style="color: #EEEEEE; margin:0;width: 104px;">
+                                Social Media
+                            </p>
+                            <div class="frame_50">
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Twitter
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Instagram
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Youtube
+                                </p>
+                                <p class="caption2_regular" style="color: #ACAFB8; margin: 0;">
+                                    Facebook
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                </div>
+            </div>
+        
+       
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@import './typography';
+
+
+.btn-primary {
+    // width: 169px;
+    // height: 52px;
+    color: #fff;
+    
+    background: #0432DF;
+    /* Brand color/Deep Blue */
+    padding: 14px 24px;
+    // border: none;
+    border: 1px solid #0432DF;
+    border-radius: 8px;
+    &.small{
+        padding: 10px 20px;
+        // width: 146px;
+        // height: 44px;
+
+        &:hover{
+            background: #0029C2;
+        }
+    }
+}
+

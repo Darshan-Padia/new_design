@@ -333,8 +333,10 @@ justify-content: center;
 align-items: center;
 padding: 14px 24px;
 gap: 10px;
+background-color: #fff;
 }
 
 .btn-secondary:hover{
   font-style: underline;
+  background-color: rgb(220, 219, 219);
 }

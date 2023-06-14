@@ -232,7 +232,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 50px 100px;
-        gap: 131px;
+        gap: 152px;
         background: #020D37;
         /* position: absolute; */
         /* width: 1244px; */
@@ -508,7 +508,13 @@
         gap: 89px;
 
     }
-
+    /* giving hover effect to divs of frame_57 */
+    .frame_57 div:hover {
+       scale: 1.2;
+       transition: all .2s ease-in-out;
+    }
+    
+    
     .dude_perfect {
         width: 50px;
         height: 50px;
@@ -710,9 +716,13 @@
 
         /* background: url(./images/Vector\ 1.svg); */
         /* background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-sizing: border-box;
         position: absolute;
         z-index: 1;
+        padding-left: 2.5px;
         width: 14px;
         height: 20px;
 
@@ -1038,6 +1048,55 @@
         align-items: center;
         border-radius: 10px;
     }
+    .sound_category_item1:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item2:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item3:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item4:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item5:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item6:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item7:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item8:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item9:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item10:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item11:hover{
+        transform: scale(1.1);
+
+    }
+    .sound_category_item12:hover{
+        transform: scale(1.1);
+
+    }
+
 
     .frame_66 {
         display: flex;
@@ -1235,6 +1294,8 @@
         border: 1px solid #EEEEEE;
         border-radius: 8px;
 
+        width: 305px;
+
 
     }
 
@@ -1263,6 +1324,10 @@
         align-items: center;
         padding: 0px 0px 5px;
         gap: 10px;
+    }
+
+    .why_us{
+        font-size: 18px;
     }
 
     .frame_45 {
@@ -1312,6 +1377,7 @@
         align-items: flex-start;
         padding: 0px;
         gap: 30px;
+        width: 298px;
 
     }
 
@@ -1507,7 +1573,7 @@
         }
     }
 
-    @media only screen and (max-width: 1260px) {
+    /* @media only screen and (max-width: 1260px) {
 
         .sound_category_item1,
         .sound_category_item2,
@@ -1526,14 +1592,19 @@
 
             transition: all .5s;
         }
-    }
+    } */
     @media only screen and (max-width: 330px) {
         .frame_7 .caption2_medium{
             font-size: 15.5px;
         }
     }
+    @media only screen and (max-width: 768px) and (min-width: 751px) {
+        .frame_29{
+            max-width: 734px
+        }
+    }
 
-    @media only screen and (max-width: 1224px) {
+    @media only screen and (max-width: 1260px) {
 
         /* Styles for tablets */
         /* Place your tablet-specific CSS rules here */
@@ -1542,6 +1613,9 @@
             /* flex-wrap: wrap; */
             /* display: inline-flex; */
 
+        }
+        .testimonial_item{
+            width: 305px;
         }
 
         .frame_72 {
@@ -1951,6 +2025,10 @@
         .frame_58_parent {
             min-width: 288px;
         }
+        .why_us{
+            line-height: 14px;
+            font-size: 14px;
+        }
     }
 
 
@@ -1963,6 +2041,18 @@
             /* flex-wrap: wrap; */
             /* display: inline-flex; */
 
+        }
+        .testimonial_item{
+            width: 287px;
+        }
+        .any{
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* width: 50px; */
+        }
+        .frame_7{
+            /* min-width: 287px; */
         }
 
         .frame_5 {
@@ -2216,7 +2306,9 @@
             align-items: flex-start;
             padding: 0px;
             gap: 10px;
-            width: 70%;
+            /* width: 70%; */
+            margin-left: 16px;
+            margin-right: 16px;
 
         }
 
@@ -2484,13 +2576,14 @@
                                     Free download sound effects without copyright
                                 </div>
                                 <div class="subtitle1_medium" style="color: #ACAFB8;  margin:0;">
-                                    Download free copyright sound effect for your YouTube video and any use.
+                                    <span class = 'any'> Download free copyright sound effect for your YouTube video and any use.</span>
                                 </div>
                             </div>
     
                             <div class="frame_75">
                                 <div class="frame_8">
                                     <div class="frame_7">
+                                        <!-- <input style="width: auto; position: absolute;" type="text"> -->
                                         <div class="search_icon">
                                             <!-- <div class="union">
                                                 <div class="search_rectangle">
@@ -2502,9 +2595,11 @@
                                             </div> -->
                                             <img style="color: #4C526A;" src="./images/search-icon.svg" alt="">
                                         </div>
-                                        <p class="caption2_medium" style="color: #4C526A; margin: 0;">
+                                        <!-- <p class="caption2_medium" style="color: #4C526A; margin: 0;">
                                             Search sound effects
-                                        </p>
+                                        </p> -->
+                                        <!-- instead of above para , creating an input field with same caption as placeholder -->
+                                       <p style="width: 90%;"><input class="caption2_medium" style="width: inherit;border: none;outline: none;background-color: #EEEEEE;;color: #4C526A; margin: 0;" type="text" placeholder="Search sound effects"></p> 
                                     </div>
                                     <!-- <div> -->
                                     <!-- <button>
@@ -2520,7 +2615,7 @@
     
                             </div>
                             <p class="frame_75_text">
-                                650.654 Available Sounds. Library Updated Weekly. See popular sounds
+                               <any class = "any"> 650.654 Available Sounds. Library Updated Weekly. See popular sounds </any>
                             </p>
                         </div>
                     </div>
@@ -2688,14 +2783,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -2762,14 +2857,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -2834,14 +2929,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -2906,14 +3001,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -2978,14 +3073,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -3050,14 +3145,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -3122,14 +3217,14 @@
                                             <!-- <div class="icon_f18"> -->
                                             <!-- <div class="group_f18"> -->
                                             <div class="heart">
-                                                <img src="./images/heart.png" alt="love">
+                                                <img src="./images/heart.svg" alt="love">
                                             </div>
                                             <div class="download">
-                                                <img src="./images/download.png" alt="download">
+                                                <img src="./images/download.svg" alt="download">
                                             </div>
     
                                             <div class="three_dots">
-                                                <img src="./images/three_dots.png" alt="menu">
+                                                <img src="./images/three_dots.svg" alt="menu">
                                             </div>
                                             <!-- </div> -->
                                             <!-- </div> -->
@@ -3305,7 +3400,7 @@
                 <div class="frame_67">
                     <!-- <div class="frame_67_child_to_center"> -->
                     <div class="frame_66">
-                        <p class="capitalised" style="font-size: 18px; color: #F59E00; ">
+                        <p class="capitalised why_us" style=" color: #F59E00; ">
                             WHY US?
                         </p>
                         <p class="h4 we_are_provide" style="color: #020D37; margin: 0; ">
@@ -3423,7 +3518,7 @@
                                 style=" margin-top: 0; margin-bottom: 17px;  color: white; width: fit-content;">
                                 Start from $12/month
                             </p>
-                            <button class="btn-secondary label1 in_basic btnw" style=" border: none; background-color: #fff;color: #0432DF;
+                            <button class="btn-secondary label1 in_basic btnw" style=" border: none;color: #0432DF;
                             border-radius: 8px;">
                                 Get started
                             </button>

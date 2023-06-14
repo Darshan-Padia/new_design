@@ -322,9 +322,11 @@ background-color: transparent;
   align-items: center;
   padding: 14px 24px;
   gap: 10px;
+  color: white
 }
 .btn-tertiary:hover{
   background: #CDD6F9;
+  color: rgb(30, 0, 255) ;
 }
 .btn-secondary{
   display: flex;
